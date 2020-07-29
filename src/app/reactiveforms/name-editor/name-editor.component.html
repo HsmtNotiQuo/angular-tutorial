@@ -1,1 +1,9 @@
-<p>name-editor works!</p>
+<div>
+  <p>プレイヤー名： {{name.value}}</p>
+  <label>
+    Name:<br>
+    <input type="text" [formControl]="name">
+  </label>
+  <p><button (click)="updateName()">おすすめの名前</button></p>
+  <p>Status: {{name.status}}</p>
+</div>
