@@ -1,21 +1,65 @@
 <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
-  <div>
-    <label>
-      <span>
-        First Name:
-      </span>
-      <input type="text" formControlName="firstName">
-    </label>
+  <div class="flex-container">
+    <div>
+      <label>
+        <span>
+          First Name:
+        </span>
+        <input type="text" formControlName="firstName">
+      </label>
+    </div>
+    <div>
+      <label>
+        <span>
+          Last Name:
+        </span>
+        <input type="text" formControlName="lastName">
+      </label>
+    </div>
+    <ng-container formGroupName="address">
+
+      <h3>Adress</h3>
+      <div>
+        <label>
+          <span>
+            Street:
+          </span>
+          <input type="text" formControlName="street">
+        </label>
+      </div>
+      <div>
+        <label>
+          <span>
+            City:
+          </span>
+          <input type="text" formControlName="city">
+        </label>
+      </div>
+      <div>
+        <label>
+          <span>
+            State:
+          </span>
+          <input type="text" formControlName="state">
+        </label>
+      </div>
+      <div>
+        <label>
+          <span>
+            Zip Code:
+          </span>
+          <input type="text" formControlName="zip">
+        </label>
+      </div>
+    </ng-container>
   </div>
-  <div>
-    <label>
-      <span>
-        Last Name:
-      </span>
-      <input type="text" formControlName="lastName">
-    </label>
-  </div>
+
   <div class="btn-area">
-    <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+    <p>
+      <button (click)="updateProfile()">Update Profile</button>
+    </p>
+    <p>
+      <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+    </p>
   </div>
 </form>
