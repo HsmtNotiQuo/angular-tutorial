@@ -26,4 +26,10 @@ button {
     cursor: pointer;
     background: #77c;
   }
+
+  &[disabled] {
+    cursor: auto;
+    background: #eee;
+    color: #999;
+  }
 }
