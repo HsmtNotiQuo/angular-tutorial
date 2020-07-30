@@ -15,6 +15,8 @@ import { MessagesComponent } from './messages/messages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { NameEditorComponent } from './reactiveforms/name-editor/name-editor.component';
+import { ReactiveformsComponent } from './reactiveforms/reactiveforms.component';
+import { ProfileEditorComponent } from './reactiveforms/profile-editor/profile-editor.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { NameEditorComponent } from './reactiveforms/name-editor/name-editor.com
     MessagesComponent,
     DashboardComponent,
     HeroSearchComponent,
-    NameEditorComponent
+    NameEditorComponent,
+    ReactiveformsComponent,
+    ProfileEditorComponent
   ],
   imports: [
     BrowserModule,

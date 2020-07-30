@@ -4,3 +4,26 @@ input {
   font-size: 1em;
   padding-left: .4em;
 }
+label {
+  font-weight: bold;
+  color: #669;
+
+  span {
+      display: block;
+  }
+}
+button {
+  appearance: none;
+  border: 0;
+  padding: .5rem 1rem;
+  background: #669;
+  color: #FFF;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 16px;
+
+  &:hover {
+    cursor: pointer;
+    background: #77c;
+  }
+}
