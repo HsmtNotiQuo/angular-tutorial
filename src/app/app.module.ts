@@ -17,6 +17,7 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { NameEditorComponent } from './reactiveforms/name-editor/name-editor.component';
 import { ReactiveformsComponent } from './reactiveforms/reactiveforms.component';
 import { ProfileEditorComponent } from './reactiveforms/profile-editor/profile-editor.component';
+import { HeroFormTemplateComponent } from './hero-form-template/hero-form-template.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ProfileEditorComponent } from './reactiveforms/profile-editor/profile-e
     HeroSearchComponent,
     NameEditorComponent,
     ReactiveformsComponent,
-    ProfileEditorComponent
+    ProfileEditorComponent,
+    HeroFormTemplateComponent
   ],
   imports: [
     BrowserModule,
